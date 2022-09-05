@@ -7,5 +7,5 @@ const { Schema } = mongoose;
 //Schema
 
 //model and export
-const Project = mongoose.model("Project", /* SCHEMA VARIABLE */);
+const Project = mongoose.model("Project" /* SCHEMA VARIABLE */);
 module.exports = Project;

@@ -1,6 +1,6 @@
 const express = require("express");
 const projects = express.Router();
-const Project = require("../models/project.js");
+const Project = require("../models/projects.js");
 
 //CREATE//POST
 
