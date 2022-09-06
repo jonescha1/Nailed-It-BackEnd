@@ -105,3 +105,6 @@ dist
 
 # Text files
 *.txt
+
+# VS Code REST extension for testing routes
+*.rest
