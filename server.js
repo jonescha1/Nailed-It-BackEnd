@@ -10,7 +10,13 @@ const app = express();
 
 //ROUTES
 app.get("/", (req, res) => {
-  res.send("Root Route");
+  res.send("You have reached the Home page/Root route!");
+});
+
+app.use("/projects", require("./controllers/projects"));
+
+app.get("*", (req, res) => {
+  res.status(404).render("error 404 - Page not found");
 });
 
 //PORT
