@@ -1,0 +1,20 @@
+Questions and To do's
+
+-Is this going to be server side rendering? if not, should we use React Router? from front end team.
+
+-What information are we wanting to store in the database:
+    Just throwing out some ideas.
+    1. Pictures/Videos
+    2. Users Name / Person who uploaded the information?
+    3. About the project
+    4. Steps taken to create the project
+    5. Time it takes to complete
+    6. Category the project will live underline
+    7. materials needed
+    8. rough cost of materials
+    9. links to the materials ordered?
+
+
+
+
+
