@@ -17,7 +17,7 @@ router.post("/", (req, res) => {
 });
 
 //UPDATE 1 PROJECT //using patch so the user can update 1 thing if needed
-router.patch("/", (req, res) => {
+router.put("/:id", (req, res) => {
   res.send("Route used to update");
 });
 
@@ -35,4 +35,4 @@ router.patch("/", (req, res) => {
 
 //UPDATE//PUT
 
-module.exports = projects;
+module.exports = router;
