@@ -1,4 +1,4 @@
-const db = require('../models')
+const db = require("../models");
 
 db.Project.create([
   {
@@ -10,4 +10,14 @@ db.Project.create([
     materials: "Wood",
     cost: 100,
   },
-]);
+])
+
+  .then(() => {
+    console.log("Success!");
+    process.exit();
+  })
+
+  .catch((err) => {
+    console.log("Failure!", err);
+    process.exit();
+  });
