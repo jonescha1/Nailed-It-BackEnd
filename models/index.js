@@ -2,7 +2,7 @@ require("dotenv").config();
 const mongoose = require("mongoose");
 
 mongoose.connect(
-  "mongodb+srv://Mnewsholme:projects@cluster0.i2kxvgb.mongodb.net/Nailed_It",
+  "mongodb+srv://jonescha1:cEiJUy0oShrNUlPT@cluster0.452fopv.mongodb.net/NailedIt",
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,
