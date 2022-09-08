@@ -16,7 +16,7 @@ app.get("/", (req, res) => {
 app.use("/projects", require("./controllers/projects"));
 
 app.get("*", (req, res) => {
-  res.status(404).render("error 404 - Page not found");
+  res.status(404).send("error 404 - Page not found");
 });
 
 //PORT
