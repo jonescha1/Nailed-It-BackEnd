@@ -1,14 +1,19 @@
 const router = require("express").Router();
+const { Project } = require("../models");
 const db = require("../models/projects");
 
 //GET ALL PROJECTS
 router.get("/", (req, res) => {
-  res.send("Getting all projects route");
+  Project.find().then((foundProjects) => {
+    res.json(foundProjects);
+  });
 });
 
 //GET ONE PROJECT
 router.get("/:id", (req, res) => {
-  res.send(`Getting project with id of ${req.params.id}`);
+  Project.findOne({ __id: req.params.id }).then((foundProject) => {
+    res.json(foundProject);
+  });
 });
 
 //CREATE 1 PROJECT
