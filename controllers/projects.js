@@ -21,18 +21,4 @@ router.put("/:id", (req, res) => {
   res.send("Route used to update");
 });
 
-//CREATE//POST
-
-//INDEX//GET
-
-//NEW//GET
-
-//SHOW//GET
-
-//EDIT//GET
-
-//DELETE//DELETE
-
-//UPDATE//PUT
-
 module.exports = router;
