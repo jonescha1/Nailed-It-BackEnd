@@ -3,10 +3,12 @@ const { Project } = require("../models");
 const db = require("../models/projects");
 
 //GET ALL PROJECTS
-router.get("/", (req, res) => {
-  Project.find().then((foundProjects) => {
-    res.json(foundProjects);
-  });
+router.get("/", async (req, res) => {
+const projects = await Project.find()
+res.json(projects)
+//Project.find().then((foundProjects) => {
+    //res.json(foundProjects);
+  ////});
 });
 
 //GET ONE PROJECT
