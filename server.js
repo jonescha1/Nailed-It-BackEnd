@@ -7,6 +7,7 @@ require("dotenv").config();
 const app = express();
 
 //MIDDLEWARE
+app.use(express.json());
 
 //ROUTES
 app.get("/", (req, res) => {

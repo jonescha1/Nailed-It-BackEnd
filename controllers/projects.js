@@ -18,12 +18,29 @@ router.get("/:id", (req, res) => {
 
 //CREATE 1 PROJECT
 router.post("/", (req, res) => {
-  res.send("Route used to create a project");
+  Project.create(req.body)
+    .then((createProject) => {
+      res.status(200).json(createProject);
+    })
+
+    .catch((err) => {
+      res.status(400).json({
+        message: "An error occured, could not create the project.",
+      });
+    });
 });
 
 //UPDATE 1 PROJECT //using patch so the user can update 1 thing if needed
 router.put("/:id", (req, res) => {
-  res.send("Route used to update");
+  Project.findByIdAndUpdate(req.params.id, req.body)
+    .then((updatedProject) => {
+      res.status(200).json(updatedProject);
+    })
+    .catch((err) => {
+      res.status(400).json({
+        message: "An error occured, could not edit the project",
+      });
+    });
 });
 
 module.exports = router;
