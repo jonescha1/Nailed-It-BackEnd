@@ -1,7 +1,7 @@
 // //require mongoose
 const mongoose = require("mongoose");
 
-// //Schema constructor
+// SCHEMA
 const projectSchema = new mongoose.Schema({
   name: { type: String, required: true },
   details: { type: String, required: true },
@@ -16,16 +16,5 @@ const projectSchema = new mongoose.Schema({
   cost: { type: Number, required: false },
 });
 
-// //Schema
-//name
-//details
-//steps
-//time
-// category woodwork, metalwork, crafts
-//materials
-//cost
-//links to materials ordered
-
-// //model and export
-const Project = mongoose.model("Project", projectSchema);
-module.exports = Project;
+//EXPORTS
+module.exports = mongoose.model("Project", projectSchema);

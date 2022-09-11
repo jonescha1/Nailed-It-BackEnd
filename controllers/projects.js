@@ -1,14 +1,10 @@
 const router = require("express").Router();
 const { Project } = require("../models");
-const db = require("../models/projects");
 
 //GET ALL PROJECTS
 router.get("/", async (req, res) => {
-const projects = await Project.find()
-res.json(projects)
-//Project.find().then((foundProjects) => {
-    //res.json(foundProjects);
-  ////});
+  const projects = await Project.find();
+  res.json(projects);
 });
 
 //GET ONE PROJECT
@@ -32,7 +28,7 @@ router.post("/", (req, res) => {
     });
 });
 
-//UPDATE 1 PROJECT //using patch so the user can update 1 thing if needed
+//UPDATE 1 PROJECT
 router.put("/:id", (req, res) => {
   Project.findByIdAndUpdate(req.params.id, req.body)
     .then((updatedProject) => {
@@ -45,4 +41,5 @@ router.put("/:id", (req, res) => {
     });
 });
 
+//EXPORTS
 module.exports = router;
