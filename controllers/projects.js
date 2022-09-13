@@ -1,3 +1,4 @@
+//DEPENDENCIES
 const router = require("express").Router();
 const { Project } = require("../models");
 
@@ -39,6 +40,11 @@ router.put("/:id", (req, res) => {
         message: "An error occured, could not edit the project",
       });
     });
+});
+
+//DELETE 1 PROJECT
+router.delete("/:id", (req, res) => {
+  Project.findByIdAndDelete(req.params.id).then(res.status(303));
 });
 
 //EXPORTS
