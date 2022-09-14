@@ -10,7 +10,7 @@ router.get("/", async (req, res) => {
 
 //GET ONE PROJECT
 router.get("/:id", (req, res) => {
-  Project.findOne({ __id: req.params.id }).then((foundProject) => {
+  Project.findOne({ _id: req.params.id }).then((foundProject) => {
     res.json(foundProject);
   });
 });
