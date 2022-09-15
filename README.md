@@ -28,7 +28,7 @@ Create your own project on the <b>Create</b> tab or explore other uploaded proje
 
 <details>	
   <br />
-  <summary><b>⚙️</b></summary>
+  <summary>OPEN ME <b>⚙️</b></summary>
   	<ul>
   	    <li><b>OS:</b> Windows 11</li>
 	    <li><b>Computers: </b> HP Laptop, Custom Built PC and Mac PC </li>
@@ -40,11 +40,8 @@ Create your own project on the <b>Create</b> tab or explore other uploaded proje
 <br>
 <br>
 
-### Installation
 
-Instruct the users step by step on how to install and use the app. This will be in a numbered list format.
 
-<br>
 
 ## Routes
 
